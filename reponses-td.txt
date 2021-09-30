@@ -1,0 +1,36 @@
+Marie MAGNY
+	TD1 OOP
+
+Exercice 1
+
+2.	La ligne est complétée automatiquement par « System.out.println(); ».
+3.	Eclipse va créer la fonction toString :
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+4.	Eclipse va créer la structure de la fonction main :
+	public static void main(String[] args) {
+		
+	}
+5.	Lorsque l’on fait juste ctrl + espace, cela créer la structure du constructeur de la classe. Quand on tape set puis que l’on fait ctrl + espace, cela créer la fonction setter pour la variable foo.
+6.	Il y a une nouvelle fenêtre qui s’ouvre :
+ 
+
+Exercice 2
+
+1.	Cela fonctionne car p est déclaré dans une méthode de la classe Point. On n’a pas non plus besoin de constructeur dans la class Main pour que cela fonctionne car il y a un constructeur sous-entendu dans la class.
+2.	Il faut rajouter des getters dans la méthode Point.
+3.	.
+4.	Un accesseur est une fonction get. On en a besoin quand on a un argument privé.
+5.	Il faut supprimer la ligne Point p = new Point(); dans la méthode afficher.
+6.	Il faut utiliser les this pour que cela fonctionne correctement et aussi dans le print.
+7.	Il faut créer une variable statique que l’on incrémente dès que le constructeur est appelé.
+8.	Le compilateur les distingue grâce aux paramètres.
+
+
+Exercice 3
+
+1.	Affiche true puis false. P1 a été créé en utilisant le = c’est donc le même objet. P1 et p3 même s’ils ont les mêmes valeurs, ce sont 2 objets point différents.
+2.	
+
