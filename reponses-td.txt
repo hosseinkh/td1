@@ -13,15 +13,17 @@ Exercice 1
 	public static void main(String[] args) {
 		
 	}
-5.	Lorsque l’on fait juste ctrl + espace, cela créer la structure du constructeur de la classe. Quand on tape set puis que l’on fait ctrl + espace, cela créer la fonction setter pour la variable foo.
+5.	Lorsque l’on fait juste ctrl + espace, cela créer la structure du constructeur de la classe. 
+	Quand on tape set puis que l’on fait ctrl + espace, cela créer la fonction setter pour la variable foo.
 6.	Il y a une nouvelle fenêtre qui s’ouvre :
  
 
 Exercice 2
 
-1.	Cela fonctionne car p est déclaré dans une méthode de la classe Point. On n’a pas non plus besoin de constructeur dans la class Main pour que cela fonctionne car il y a un constructeur sous-entendu dans la class.
+1.	Cela fonctionne car p est déclaré dans une méthode de la classe Point. 
+	On n’a pas non plus besoin de constructeur dans la class Main pour que cela fonctionne car il y a un constructeur sous-entendu dans la class.
 2.	Il faut rajouter des getters dans la méthode Point.
-3.	.
+3.	Pour que les autres classes ne puissent pas y accéder 
 4.	Un accesseur est une fonction get. On en a besoin quand on a un argument privé.
 5.	Il faut supprimer la ligne Point p = new Point(); dans la méthode afficher.
 6.	Il faut utiliser les this pour que cela fonctionne correctement et aussi dans le print.
@@ -31,6 +33,10 @@ Exercice 2
 
 Exercice 3
 
-1.	Affiche true puis false. P1 a été créé en utilisant le = c’est donc le même objet. P1 et p3 même s’ils ont les mêmes valeurs, ce sont 2 objets point différents.
-2.	
+1.	Affiche true puis false. P1 a été créé en utilisant le = c’est donc le même objet. 
+	P1 et p3 même s’ils ont les mêmes valeurs, ce sont 2 objets point différents.
+3.	Ce code affiche 0 et -1. Cela veut dire que p2 se trouve à l'index 0 dans list et que p3 ne se trouve pas dans list. 
+	Cependant, on a ajouté p1 et non p2 dans la list. Cette erreur est dû a fait qu'on a définie p2=p1.
+	La méthode appelée est Objects.equals(o, get(i)) avec o le paramètre de indexOf().
+	
 
