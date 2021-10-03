@@ -15,7 +15,8 @@ public class PolyLine {
 	}
 	
 	public boolean add(Point p) {
-		if(points.size()+1 > max) return false;
+		if(points.size()+1 > max) return false; // En générale le taille de LinkedList n'est pas fixes, alors pas besoin de verifier cette condition
+		// Si vous utiliser ArrayList(qui a le taille fixe) c'est obligatoire de verifier cette condition. Dans ce cas vous pouvez aussi lever une exception.
 		else {
 			//Objects.requireNonNull(p, "p must not be null");
 			points.add(p);
