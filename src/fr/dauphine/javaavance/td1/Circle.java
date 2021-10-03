@@ -6,7 +6,11 @@ public class Circle {
 	
 	public Circle(Point p, int r) {
 		// TODO Auto-generated constructor stub
-		this.center = p;
+		this.center = p; 
+		/*(Faite attention, La class point est en generale mutable (les valeurs de x et y pouvent changer avec la methode translate
+		    Vous devez d'abords definir les attribus de la classe point comme (final private), après changé definition de la method translate 
+		afin de retourner un autre point(au lieu de modifier le point actuelle) de plus il faut que vous utilisiez le technique de copie défensive.//
+		dans la constracteur de Circle*/
 		this.radius = r;
 	}
 	
